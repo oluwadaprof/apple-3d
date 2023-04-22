@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb {
   padding: 50px 0 400px 0;
   height: 100vh;
   box-sizing: border-box;
-  /* opacity: 0; */
+  opacity: 0;
   position: relative;
 }
 
@@ -109,6 +109,8 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
   margin-bottom: 18px;
 }
+
+
 
 .display-section .description {
   font-size: 21px;
@@ -224,6 +226,7 @@ nav .link-styled {
   margin-bottom: 18px;
 }
 
+
 .jumbotron-section .description {
   font-size: 21px;
   font-weight: 400;
@@ -328,7 +331,7 @@ nav .link-styled {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .sound-section .title {
@@ -441,4 +444,18 @@ nav .link-styled {
   .sound-section .content {
     max-width: 100%;
   }
+}
+
+
+@media screen and (min-width: 320px) {
+  .jumbotron-section .text,  .sound-section .text{
+    font-size: 38px;
+    text-align: center;
+  }
+  
+  .jumbotron-section .description, .sound-section .description{
+    font-size: 16px;
+    text-align: center;
+  }
+  
 }
